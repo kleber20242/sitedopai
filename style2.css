@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== BASE ===== */
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* evita rolagem lateral */
+  font-family: "MedievalSharp", cursive;
+  background-color: wheat;
+  color: #222;
+  line-height: 1.8;
+}
+
+/* ===== CONTEÚDO ===== */
+#content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Título principal */
+#content > h1 {
+  font-size: 45px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+/* Parágrafos */
+#content > p {
+  margin-top: 50px;
+  font-size: 25px;
+  font-weight: 900;
+  padding: 0 150px;
+  text-align: justify;
+  line-height: 1.8;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+
+/* 📱 Celulares pequenos (até 480px) */
+@media (max-width: 480px) {
+  #content {
+    padding: 30px 15px;
+  }
+
+  #content > h1 {
+    font-size: 28px;
+    margin-top: 30px;
+  }
+
+  #content > p {
+    font-size: 18px;
+    padding: 0 10px;
+    line-height: 1.6;
+    text-align: left;
+  }
+}
+
+/* 📱 Celulares médios e tablets (até 768px) */
+@media (max-width: 768px) {
+  #content {
+    padding: 0px 0px;
+  }
+
+  #content > h1 {
+    font-size: 30px;
+  }
+
+  #content > p {
+    font-size: 20px;
+    padding: 0 30px;
+    text-align: justify;
+  }
+}
+
+/* 💻 Telas médias (até 1024px) */
+@media (max-width: 1024px) {
+  #content > p {
+    padding: 0 60px;
+  }
+}
+
+/* 🖥️ Telas grandes (acima de 1600px) */
+@media (min-width: 1600px) {
+  #content {
+    max-width: 1400px;
+  }
+
+  #content > h1 {
+    font-size: 55px;
+  }
+
+  #content > p {
+    font-size: 28px;
+  }
+}
+
+
